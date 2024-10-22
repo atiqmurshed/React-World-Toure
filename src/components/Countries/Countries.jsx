@@ -18,7 +18,7 @@ const Countries = () => {
     const handleVisitedCountry = country => {
         console.log('add this to your visited this country'); 
         const newVisitedCountries = [...visitedCountries, country];
-        setVisitedCountries(newVisitedCountris);
+        setVisitedCountries(newVisitedCountries);
     }
 
     const handleVisitedFlags = flag => {
@@ -49,7 +49,7 @@ const Countries = () => {
 
             <div className="flag-container">
                     {
-                        visitedFlags.map((flag, Idx) => <img key={idx} src={flag}></img>)
+                        visitedFlags.map((flag, idx) => <img key={idx} src={flag}></img>)
                     }
             </div>
 
