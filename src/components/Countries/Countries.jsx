@@ -24,8 +24,11 @@ const Countries = () => {
     const handleVisitedFlags = flag => {
         const newVisitedFlags = [...visitedFlags, flag];
         setVisitedFlags(newVisitedFlags);
-       
     }
+//remove item from an array in a state;
+//use filter to select all the elements except the one you went to remove;
+
+
 
     return (
         <div>
@@ -46,7 +49,7 @@ const Countries = () => {
 
             <div className="flag-container">
                     {
-                        visitedFlags.map(flag => <img src={flag}></img>)
+                        visitedFlags.map((flag, Idx) => <img key={idx} src={flag}></img>)
                     }
             </div>
 
